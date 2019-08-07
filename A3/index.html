@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Домашнее задание 3</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- <script type="text/javascript" src="js/script.js"></script> -->
+</head>
+<body>
+    <div class="header">
+        <div class="site-menu">
+            <a href="">Home</a>
+            <a href="">Portfolio</a>
+            <a href="">About Us</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="intro-wrapper">
+            <h1>Our strong<br> organisation</h1>
+            <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt  ut labore et. ectetur adig ipis cing elit, sed do eiusmod tempor incididunt.</p>
+            <a class="contact-link" href="">Contact Us</a>
+
+<!-- ToDo Start -->
+            <form class="form" action="" method="GET">
+                <fieldset>
+                    <input type="form" name="email" required id="email" placeholder="Type your email">
+                    <label for="email">EMAIL</label>
+                </fieldset>
+                <button type="submit">Send!</button>               
+            </form>
+<!-- ToDo Finish -->
+        <p></p>
+        <button class="popup-button">Enter</button>
+        <div class="popup"></div>
+
+
+        </div>
+        <img class="intro-image" src="img/office.jpeg" alt="Фото офиса" width="551" height="356">
+
+
+
+<!-- 4.7 -->
+    <form class="form" action="" method="GET">
+            <fieldset>
+                <legend>Материал</legend>
+                
+                <input type="radio" name="material" value="metal" id="metal">
+
+
+                <label for="metal">Металл </label>
+                <input type="radio" name="material" value="plastic" id="plastic">
+                <label for="plastic">Пластик </label>
+            </fieldset>
+            <fieldset>
+                <legend>Дополнительные опции</legend>
+                <input type="checkbox" name="option" value="trunk" id="trunk">
+                <label for="trunk">Багажник </label>
+                <input type="checkbox" name="option" value="pump" id="pump">
+                <label for="pump">Насос </label>
+                <input type="checkbox" name="option" value="chain" id="chain">
+                <label for="chain">Запасная цепь </label>
+            </fieldset>
+            <button type="submit">Найти</button>
+        </form>
+
+<!-- ToDo Start-->
+
+<form action="" method="GET">
+    <input type="text" name="login" placeholder="Введите свой логин">
+    <button type="submit">Отправить</button>
+</form>
+
+
+    <form action="https:/google.com/search" method="GET" >
+        <label for "google-search">"Поиск через Гугл: "
+            <input type="search" name="q" login="google-search"  placeholder="Введите поисковый запрос">
+            <button type="submit">Отправить</button>
+        </label>
+    </form>
+
+<!-- ToDo Finish -->
+
+
+
+<!-- ToDo Start -->
+
+<ul class="menu-site">
+
+    <li><a href="">Главная</a></li>
+
+    <li><a href="">Услуги</a></li>
+
+    <li><a href="">Портфолио</a></li>
+
+    <li><a href="">О нас</a></li>
+
+    <li><a href="">Контакты</a></li>
+
+</ul>
+
+<!-- ToDo Finish -->
+
+
+
+<!-- ToDo Start -->
+
+            <form class="form" action="" method="GET">
+                <fieldset>
+                    <legend>Design tips, tricks, and freebies. Delivered weekly.</legend>
+                    <input type="email" name="email" required id="email" placeholder="Type your email">
+                    <label for="email">EMAIL</label>
+                    <button type="submit">Subscribe</button>
+                </fieldset>
+                <fieldset>
+                    <legend>Get in touch.</legend>
+                    <input type="form" name="name" required id="name" placeholder="Type your name">
+                    <label for="name">Name</label>                  
+
+                    <input type="text" name="message" required id="message" placeholder="Type your message">
+                    <label for="message">Message</label>
+
+                    <input type="email" name="email" required id="email" placeholder="Type your email">
+                    <label for="email">Email</label>
+
+                    <button type="submit">Send message</button>              
+            </form>
+
+<!-- ToDo Finish -->
+
+
+
+
+
+
+
+
+    </div>
+<script>
+    let button = document.querySelector('.popup-button');
+
+    button.addEventListener('click', showPopup);
+
+    function showPopup() {
+        document.querySelector('.popup').classList.toggle('visible');
+        console.log('showPopup works');
+    }
+</script>
+</body>
+</html>
